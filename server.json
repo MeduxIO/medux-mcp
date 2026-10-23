@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.MeduxIO/medux",
+  "title": "Medux",
+  "description": "AI video, image, speech, voice cloning and avatar generation, plus PDF/audio/video editing tools.",
+  "version": "0.1.1",
+  "websiteUrl": "https://medux.io",
+  "repository": {
+    "url": "https://github.com/MeduxIO/medux-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://medux.io/api/mcp/v1",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Medux API key as a Bearer token, e.g. \"Bearer sk-medux-...\". Create one in your Medux account.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
